@@ -1,6 +1,6 @@
 const video = document.getElementById("localVideo");
-const canvas1 = document.getElementById("leftCanvas");
-const canvas2 = document.getElementById("rightCanvas");
+const canvas1 = document.getElementById("rightCanvas");
+const canvas2 = document.getElementById("leftCanvas");
 const canvasS = document.getElementById("sourceCanvas");
 const ctx1 = canvas1.getContext("2d");
 const ctx2 = canvas2.getContext("2d");
@@ -28,7 +28,9 @@ tFunc = function() {
 	ctx2.scale(-1,1);
 	ctx2.drawImage(video, canvas2.width/2, 0, canvas2.width/2, canvas2.height, -canvas2.width/2, 0, canvas2.width/2, canvas2.height);
 	
-	ctxS.drawImage(video, 0, 0, canvasS.width, canvasS.height);
+	ctxS.scale(-1,1);
+	ctxS.drawImage(video, -canvasS.width, 0, canvasS.width, canvasS.height);
+	ctxS.scale(1,1);
 	ctxS.beginPath();
 	ctxS.moveTo(canvasS.width / 2, 0);
 	ctxS.lineTo(canvasS.width / 2, canvasS.height);
