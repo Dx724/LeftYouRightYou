@@ -30,7 +30,7 @@ tFunc = function() {
 	
 	ctxS.scale(-1,1);
 	ctxS.drawImage(video, -canvasS.width, 0, canvasS.width, canvasS.height);
-	ctxS.scale(1,1);
+	ctxS.scale(-1,1);
 	ctxS.beginPath();
 	ctxS.moveTo(canvasS.width / 2, 0);
 	ctxS.lineTo(canvasS.width / 2, canvasS.height);
