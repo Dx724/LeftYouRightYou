@@ -12,10 +12,12 @@
 	font-size: 2em;
 }
 
-#mainHeader {
+#mainHeader, #tipText {
 	text-align: center;
 	margin: auto;
 	display: block;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
 
 #vidContainer {
