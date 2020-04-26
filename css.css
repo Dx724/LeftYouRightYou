@@ -5,15 +5,33 @@
 #activateButton {
 	width: 90vw;
 	height: 10vh;
+	margin: auto;
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 2em;
+}
+
+#mainHeader {
+	text-align: center;
+	margin: auto;
+	display: block;
 }
 
 #vidContainer {
 	display: flex;
 	width: 100vw;
+	justify-content: center;
 }
 
 canvas {
 	width: 30vw;
 	padding-left: 1.5vw;
 	padding-right: 1.5vw;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
 }
